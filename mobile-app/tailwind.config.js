@@ -8,7 +8,26 @@ module.exports = {
   ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        light : "#FFF2F9",
+        Pink : "#FA4EAB",
+        dark : "#323232",
+        lightPink: "#FE83C6"
+      },
+      fontFamily: {
+        // Roboto
+        'roboto': ['Roboto_400Regular'],
+        'roboto-medium': ['Roboto_500Medium'],
+        'roboto-bold': ['Roboto_700Bold'],
+        
+        // Lora
+        'lora': ['Lora_400Regular'],
+        'lora-medium': ['Lora_500Medium'],
+        'lora-semibold': ['Lora_600SemiBold'],
+        'lora-bold': ['Lora_700Bold'],
+      },
+    },
   },
   plugins: [],
 }
