@@ -1,20 +1,23 @@
+import "./global.css";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaProvider >
+
+      <View className="bg-white p-8 rounded-lg shadow-lg">
+        <Text className="text-3xl font-bold text-blue-600 mb-4">
+          Hello NativeWind!
+        </Text>
+        <Text className="text-gray-700 text-center">
+          Tailwind CSS is now working in your React Native app
+        </Text>
+      </View>
       <StatusBar style="auto" />
-    </View>
+
+    </SafeAreaProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
