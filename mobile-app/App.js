@@ -5,10 +5,10 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <SafeAreaProvider >
+    <SafeAreaProvider className="flex-1">
 
       <View className="bg-white p-8 rounded-lg shadow-lg">
-        <Text className="text-3xl font-bold text-blue-600 mb-4">
+        <Text className="text-5xl font-bold text-blue-600 mb-4">
           Hello NativeWind!
         </Text>
         <Text className="text-gray-700 text-center">
