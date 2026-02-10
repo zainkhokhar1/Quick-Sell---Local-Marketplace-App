@@ -10,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors : {
-        light : "#FFF2F9",
-        Pink : "#FA4EAB",
-        dark : "#323232",
-        lightPink: "#FE83C6"
+        light : "#FFFFFF",
+        darkBlue : "#252243",
+        skyBlue : "#5161F1",
+        lightCyan : "#63E9F8",
       },
       fontFamily: {
         // Roboto

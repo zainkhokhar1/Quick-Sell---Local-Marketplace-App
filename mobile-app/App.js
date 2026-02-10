@@ -20,6 +20,8 @@ import {
 
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { ButtonText, H1 } from "./components/ui/Typography.js";
+import { DarkButton } from "./components/ui/Button.js";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -50,39 +52,25 @@ export default function App() {
   return (
     <SafeAreaProvider>
 
-      <SafeAreaView style={{ flex: 1, paddingInline: 20 }}>
+      <SafeAreaView className="bg-light flex-1" >
 
-        {/* Roboto Examples */}
-        <Text className="font-roboto text-base text-gray-800">
-          This is Roboto Regular
-        </Text>
+        <View className="bg-light flex-1 px-4">
 
-        <Text className="font-roboto-medium text-lg text-gray-900 mt-2">
-          This is Roboto Medium
-        </Text>
+          {/* Roboto Examples */}
+          <H1 className="font-roboto text-darkBlue">
+            This is Roboto Regular
+          </H1>
 
-        <Text className="font-roboto-bold text-xl text-black mt-2">
-          This is Roboto Bold
-        </Text>
+          <DarkButton className="w-[90%]">
+            <ButtonText className="text-lg font-medium text-center">
+              Click Me
+            </ButtonText>
+          </DarkButton>
 
-        {/* Lora Examples */}
-        <Text className="font-lora text-2xl text-gray-800 mt-6">
-          This is Lora Regular
-        </Text>
-
-        <Text className="font-lora-medium text-2xl text-gray-900 mt-2">
-          This is Lora Medium
-        </Text>
-
-        <Text className="font-lora-semibold text-3xl text-gray-900 mt-2">
-          This is Lora Semibold
-        </Text>
-
-        <Text className="font-lora-bold text-4xl text-black mt-2">
-          This is Lora Bold
-        </Text>
+        </View>
 
         <StatusBar style="auto" />
+
       </SafeAreaView>
 
     </SafeAreaProvider>

@@ -8,25 +8,45 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo-two.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#252243"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "splash": {
+        "image": "./assets/logo-two.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#252243"
       },
-      "edgeToEdgeEnabled": true
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-two.png",
+        "backgroundColor": "#252243"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.QuickSell"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
-    ]
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo-two.png",
+          "imageWidth": 300,
+          "resizeMode": "contain",
+          "backgroundColor": "#252243"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2b8e5488-c128-4a4e-af63-5efca3b47af4"
+      }
+    }
   }
 }
