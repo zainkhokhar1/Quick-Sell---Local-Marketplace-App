@@ -24,6 +24,14 @@ export function H3({ children, className = '', ...props }) {
     );
 }
 
+export function H4({ children, className = '', ...props }) {
+    return (
+        <Text className={`font-lora-medium text-xl text-gray-800 ${className}`} {...props}>
+            {children}
+        </Text>
+    );
+}
+
 // Body text (using Roboto)
 export function Body({ children, className = '', ...props }) {
     return (

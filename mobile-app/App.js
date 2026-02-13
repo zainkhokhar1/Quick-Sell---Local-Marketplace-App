@@ -1,8 +1,6 @@
 import "./global.css";
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { useTodoStore } from "./store/store.js";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useTodoStore } from "./src/store/store.js";
 
 import {
   Lora_400Regular,
@@ -20,8 +18,8 @@ import {
 
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import { ButtonText, H1 } from "./components/ui/Typography.js";
-import { DarkButton } from "./components/ui/Button.js";
+import WelcomeScreen from "./src/screens/auth/WelcomeScreen.js";
+import RootNavigation from "./src/navigation/index.js";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -52,26 +50,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
 
-      <SafeAreaView className="bg-light flex-1" >
-
-        <View className="bg-light flex-1 px-4">
-
-          {/* Roboto Examples */}
-          <H1 className="font-roboto text-darkBlue">
-            This is Roboto Regular
-          </H1>
-
-          <DarkButton className="w-[90%]">
-            <ButtonText className="text-lg font-medium text-center">
-              Click Me
-            </ButtonText>
-          </DarkButton>
-
-        </View>
-
-        <StatusBar style="auto" />
-
-      </SafeAreaView>
+      <RootNavigation />
 
     </SafeAreaProvider>
   );

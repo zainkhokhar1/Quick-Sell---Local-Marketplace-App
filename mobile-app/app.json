@@ -4,11 +4,11 @@
     "slug": "Quick-Sell",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/logo-only.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/logo-two.png",
+      "image": "./src/assets/logo-two.png",
       "resizeMode": "contain",
       "backgroundColor": "#252243"
     },
@@ -17,26 +17,26 @@
     },
     "android": {
       "splash": {
-        "image": "./assets/logo-two.png",
+        "image": "./src/assets/logo-two.png",
         "resizeMode": "contain",
         "backgroundColor": "#252243"
       },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo-two.png",
+        "foregroundImage": "./src/assets/logo-two.png",
         "backgroundColor": "#252243"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.anonymous.QuickSell"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon.png"
     },
     "plugins": [
       "expo-font",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/logo-two.png",
+          "image": "./src/assets/logo-two.png",
           "imageWidth": 300,
           "resizeMode": "contain",
           "backgroundColor": "#252243"
